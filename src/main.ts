@@ -1,11 +1,11 @@
 import { NestFactory } from '@nestjs/core'
 import { Transport, TcpOptions } from '@nestjs/microservices'
 
-import { TokenModule } from './token.module'
+import { PermissionModule } from './permission.module'
 import { ConfigService } from './services/config/config.service'
 
 async function bootstrap() {
-  const app = await NestFactory.createMicroservice(TokenModule, {
+  const app = await NestFactory.createMicroservice(PermissionModule, {
     transport: Transport.TCP,
     options: {
       host: '0.0.0.0',

@@ -3,7 +3,7 @@ export class ConfigService {
 
   constructor() {
     this.envConfig = {
-      port: process.env.TOKEN_SERVICE_PORT
+      port: process.env.PERMISSION_SERVICE_PORT
     }
   }
 
